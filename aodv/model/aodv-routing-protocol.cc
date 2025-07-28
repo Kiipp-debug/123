@@ -1968,7 +1968,7 @@ RoutingProtocol::RouteRequestTimerExpire (Ipv4Address dst)
       m_addressReqTimer.erase (dst);
       m_routingTable.DeleteRoute (dst);
       m_queue.DropPacketWithDst (dst);
-      //TODO: ? delete ETX metric ?
+
     }
 }
 
